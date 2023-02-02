@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+`ng new ng-beehive-monorepo --create-application false
+ng g app suits --routing --style=scss
+ng g app abgroup --routing --style=scss
+ng g app localizer --routing --style=scss
+ng g lib libs/auth-lib
+
+package.json
+"start:suits":"ng serve --project=suits --port 4000",
+"start:abgroup":"ng serve --project=abgroup --port 4100",
+"start:localizer":"ng serve --project=localizer --port 4300",
+
+
+npm run start:suits
+npm run start:abgroup
+npm run start:localizer`
